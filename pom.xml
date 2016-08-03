@@ -6,6 +6,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>healthbaby</name>
 	<packaging>war</packaging>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<jsonlib.version>2.4</jsonlib.version>
+		<jackson.version>2.5.4</jackson.version>
+		<servlet.version>2.5</servlet.version>
+	</properties>
 	<parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -43,6 +50,12 @@
 		        </exclusion>
 		    </exclusions>
         </dependency>
+        <dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${servlet.version}</version>
+			<scope>provided</scope>
+		</dependency>
 
 	</dependencies>
 	<build>
